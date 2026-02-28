@@ -1,0 +1,17 @@
+{
+  "name": "media-toolkit",
+  "version": "1.0.0",
+  "description": "Download TikTok, YouTube videos and transcribe media",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.0.2",
+    "uuid": "^13.0.0"
+  }
+}
