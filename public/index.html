@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediaKit — Download & Transkrip</title>
-    <meta name="description" content="Download video TikTok, YouTube, dan transkrip audio/video secara mudah dan cepat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MediaKit — Download &amp; Transkrip Media</title>
+    <meta name="description"
+        content="Download video dari TikTok, YouTube, Instagram, Twitter dan platform lainnya. Transkrip audio/video dengan AI secara cepat dan mudah.">
+    <meta name="theme-color" content="#07070d">
+    <meta name="color-scheme" content="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
@@ -14,19 +17,17 @@
 </head>
 
 <body>
-    <!-- Animated background -->
-    <div class="bg-animation">
+    <div class="bg-animation" aria-hidden="true">
         <div class="bg-orb bg-orb-1"></div>
         <div class="bg-orb bg-orb-2"></div>
         <div class="bg-orb bg-orb-3"></div>
     </div>
 
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">
+            <div class="logo" role="banner">
                 <div class="logo-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                         <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
                         <path d="M10 22V10l14 6-14 6z" fill="white" />
                         <defs>
@@ -39,19 +40,19 @@
                 </div>
                 <span class="logo-text">Media<span class="logo-highlight">Kit</span></span>
             </div>
-            <nav class="nav-tabs" id="navTabs">
-                <button class="nav-tab active" data-tab="download" id="tab-download">
+            <nav class="nav-tabs" id="navTabs" aria-label="Menu utama">
+                <button class="nav-tab active" data-tab="download" id="tab-download" aria-selected="true">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                         <polyline points="7 10 12 15 17 10" />
                         <line x1="12" y1="15" x2="12" y2="3" />
                     </svg>
                     Download
                 </button>
-                <button class="nav-tab" data-tab="transcript" id="tab-transcript">
+                <button class="nav-tab" data-tab="transcript" id="tab-transcript" aria-selected="false">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                         <polyline points="14 2 14 8 20 8" />
                         <line x1="16" y1="13" x2="8" y2="13" />
@@ -60,53 +61,52 @@
                     </svg>
                     Transkrip
                 </button>
-                <button class="nav-tab" data-tab="bootanim" id="tab-bootanim">
+                <button class="nav-tab" data-tab="bootanim" id="tab-bootanim" aria-selected="false">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                     </svg>
-                    Boot Animation
+                    Boot Anim
                 </button>
             </nav>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" role="main">
         <div class="container">
 
             <!-- ============ DOWNLOAD TAB ============ -->
-            <section class="tab-content active" id="content-download">
+            <section class="tab-content active" id="content-download" aria-labelledby="tab-download">
                 <div class="hero-section">
                     <h1 class="hero-title">Download Video <span class="gradient-text">Tanpa Batas</span></h1>
                     <p class="hero-subtitle">Unduh video dari TikTok, YouTube, Instagram, Twitter, dan platform lainnya
-                        dengan mudah</p>
+                        dengan mudah dan cepat</p>
                 </div>
 
-                <!-- Platform badges -->
-                <div class="platform-badges">
+                <div class="platform-badges" aria-label="Platform yang didukung">
                     <div class="badge badge-tiktok">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.05a6.32 6.32 0 0 0-1-.05 6.34 6.34 0 0 0 0 12.68 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 3.88.96V6.69z" />
                         </svg>
                         TikTok
                     </div>
                     <div class="badge badge-youtube">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                         YouTube
                     </div>
                     <div class="badge badge-insta">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
                         </svg>
                         Instagram
                     </div>
                     <div class="badge badge-twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                         </svg>
@@ -114,12 +114,11 @@
                     </div>
                 </div>
 
-                <!-- URL Input -->
                 <div class="input-card" id="download-card">
                     <div class="input-group">
                         <div class="input-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                             </svg>
@@ -128,7 +127,7 @@
                             placeholder="Paste URL video disini... (TikTok, YouTube, dll)" autocomplete="off">
                         <button class="btn-primary" id="btnFetchInfo" onclick="fetchInfo()">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <circle cx="11" cy="11" r="8" />
                                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
                             </svg>
@@ -136,7 +135,6 @@
                         </button>
                     </div>
 
-                    <!-- Quality selector  -->
                     <div class="options-row" id="downloadOptions" style="display:none;">
                         <div class="option-group">
                             <label>Format</label>
@@ -171,7 +169,7 @@
                         </div>
                         <button class="btn-download" id="btnDownload" onclick="startDownload()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                 <polyline points="7 10 12 15 17 10" />
                                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -181,10 +179,9 @@
                     </div>
                 </div>
 
-                <!-- Video Preview Card -->
                 <div class="preview-card" id="previewCard" style="display:none;">
                     <div class="preview-thumb">
-                        <img id="previewImg" src="" alt="Thumbnail">
+                        <img id="previewImg" src="" alt="Video thumbnail">
                         <div class="preview-duration" id="previewDuration"></div>
                         <div class="preview-platform" id="previewPlatform"></div>
                     </div>
@@ -195,20 +192,19 @@
                     </div>
                 </div>
 
-                <!-- Download Progress -->
                 <div class="progress-card" id="downloadProgress" style="display:none;">
                     <div class="progress-header">
-                        <div class="spinner"></div>
+                        <div class="spinner" aria-hidden="true"></div>
                         <span id="progressText">Sedang mendownload...</span>
                     </div>
                     <div class="progress-bar-track">
-                        <div class="progress-bar-fill" id="progressBar"></div>
+                        <div class="progress-bar-fill" id="progressBar" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
 
-                <!-- Download Result -->
                 <div class="result-card" id="downloadResult" style="display:none;">
-                    <div class="result-icon">
+                    <div class="result-icon" aria-hidden="true">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -219,7 +215,7 @@
                     <p id="resultInfo"></p>
                     <a class="btn-download-file" id="resultDownloadLink" href="#" download>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                             <polyline points="7 10 12 15 17 10" />
                             <line x1="12" y1="15" x2="12" y2="3" />
@@ -230,26 +226,27 @@
             </section>
 
             <!-- ============ TRANSCRIPT TAB ============ -->
-            <section class="tab-content" id="content-transcript">
+            <section class="tab-content" id="content-transcript" aria-labelledby="tab-transcript">
                 <div class="hero-section">
                     <h1 class="hero-title">Transkrip <span class="gradient-text">Cerdas</span></h1>
                     <p class="hero-subtitle">Ubah audio/video menjadi teks dengan AI. Dari URL atau upload file
                         langsung.</p>
                 </div>
 
-                <!-- Mode toggle -->
-                <div class="mode-toggle">
-                    <button class="mode-btn active" data-mode="url" id="mode-url" onclick="switchTranscriptMode('url')">
+                <div class="mode-toggle" role="tablist" aria-label="Mode transkrip">
+                    <button class="mode-btn active" data-mode="url" id="mode-url" onclick="switchTranscriptMode('url')"
+                        role="tab" aria-selected="true">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                         </svg>
                         Dari URL
                     </button>
-                    <button class="mode-btn" data-mode="file" id="mode-file" onclick="switchTranscriptMode('file')">
+                    <button class="mode-btn" data-mode="file" id="mode-file" onclick="switchTranscriptMode('file')"
+                        role="tab" aria-selected="false">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
                             <polyline points="13 2 13 9 20 9" />
                         </svg>
@@ -257,12 +254,11 @@
                     </button>
                 </div>
 
-                <!-- URL Mode -->
                 <div class="input-card transcript-mode" id="transcriptUrlMode">
                     <div class="input-group">
                         <div class="input-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                             </svg>
@@ -272,7 +268,7 @@
                     </div>
                     <div class="options-row">
                         <div class="option-group">
-                            <label>Bahasa</label>
+                            <label for="transcriptLang">Bahasa</label>
                             <select id="transcriptLang" class="select-input">
                                 <option value="auto">Auto Detect</option>
                                 <option value="id">Bahasa Indonesia</option>
@@ -285,7 +281,7 @@
                         </div>
                         <button class="btn-download" onclick="transcribeFromUrl()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
                                 <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
                                 <line x1="12" y1="19" x2="12" y2="23" />
@@ -296,17 +292,16 @@
                     </div>
                 </div>
 
-                <!-- File Upload Mode -->
                 <div class="input-card transcript-mode" id="transcriptFileMode" style="display:none;">
                     <div class="upload-zone" id="uploadZone">
                         <div class="upload-zone-content">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                 <polyline points="17 8 12 3 7 8" />
                                 <line x1="12" y1="3" x2="12" y2="15" />
                             </svg>
-                            <p class="upload-text">Drag & drop file disini</p>
+                            <p class="upload-text">Drag &amp; drop file disini</p>
                             <p class="upload-subtext">atau klik untuk pilih file</p>
                             <p class="upload-formats">MP4, MKV, AVI, MOV, WEBM, MP3, WAV, OGG, M4A, FLAC, AAC</p>
                         </div>
@@ -316,7 +311,7 @@
                     <div id="fileSelected" class="file-selected" style="display:none;">
                         <div class="file-info">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                                stroke-width="2" aria-hidden="true">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                                 <polyline points="14 2 14 8 20 8" />
                             </svg>
@@ -325,11 +320,11 @@
                                 <p class="file-size" id="fileSize"></p>
                             </div>
                         </div>
-                        <button class="btn-remove" onclick="removeFile()">✕</button>
+                        <button class="btn-remove" onclick="removeFile()" aria-label="Hapus file">✕</button>
                     </div>
                     <div class="options-row">
                         <div class="option-group">
-                            <label>Bahasa</label>
+                            <label for="transcriptFileLang">Bahasa</label>
                             <select id="transcriptFileLang" class="select-input">
                                 <option value="auto">Auto Detect</option>
                                 <option value="id">Bahasa Indonesia</option>
@@ -342,7 +337,7 @@
                         </div>
                         <button class="btn-download" onclick="transcribeFromFile()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
                                 <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
                                 <line x1="12" y1="19" x2="12" y2="23" />
@@ -353,32 +348,32 @@
                     </div>
                 </div>
 
-                <!-- Transcript Progress -->
                 <div class="progress-card" id="transcriptProgress" style="display:none;">
                     <div class="progress-header">
-                        <div class="spinner"></div>
+                        <div class="spinner" aria-hidden="true"></div>
                         <span id="transcriptProgressText">Sedang memproses transkrip...</span>
                     </div>
                     <p class="progress-note">Proses ini mungkin memakan waktu beberapa menit tergantung durasi media.
                     </p>
                 </div>
 
-                <!-- Transcript Result -->
                 <div class="transcript-result" id="transcriptResult" style="display:none;">
                     <div class="transcript-header">
                         <h3>📝 Hasil Transkrip</h3>
                         <div class="transcript-actions">
                             <span class="lang-badge" id="detectedLang"></span>
-                            <button class="btn-icon" onclick="copyTranscript()" title="Copy">
+                            <button class="btn-icon" onclick="copyTranscript()" title="Copy"
+                                aria-label="Copy transkrip">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
                                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
                                 </svg>
                             </button>
-                            <button class="btn-icon" onclick="downloadTranscript()" title="Download TXT">
+                            <button class="btn-icon" onclick="downloadTranscript()" title="Download TXT"
+                                aria-label="Download transkrip">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                     <polyline points="7 10 12 15 17 10" />
                                     <line x1="12" y1="15" x2="12" y2="3" />
@@ -386,9 +381,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="transcript-tabs">
-                        <button class="transcript-tab active" onclick="switchTranscriptView('full')">Teks Penuh</button>
-                        <button class="transcript-tab" onclick="switchTranscriptView('segments')">Dengan
+                    <div class="transcript-tabs" role="tablist">
+                        <button class="transcript-tab active" onclick="switchTranscriptView('full')" role="tab">Teks
+                            Penuh</button>
+                        <button class="transcript-tab" onclick="switchTranscriptView('segments')" role="tab">Dengan
                             Timestamp</button>
                     </div>
                     <div class="transcript-body" id="transcriptFull"></div>
@@ -397,7 +393,7 @@
             </section>
 
             <!-- ============ BOOT ANIMATION TAB ============ -->
-            <section class="tab-content" id="content-bootanim">
+            <section class="tab-content" id="content-bootanim" aria-labelledby="tab-bootanim">
                 <div class="hero-section">
                     <h1 class="hero-title">Boot Animation <span class="gradient-text">Generator</span></h1>
                     <p class="hero-subtitle">Ubah video favoritmu menjadi boot animation Magisk Module siap pakai.</p>
@@ -407,7 +403,7 @@
                     <div class="upload-zone" id="bootAnimUploadZone">
                         <div class="upload-zone-content">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                 <polyline points="17 8 12 3 7 8" />
                                 <line x1="12" y1="3" x2="12" y2="15" />
@@ -421,7 +417,7 @@
                     <div id="bootAnimFileSelected" class="file-selected" style="display:none;">
                         <div class="file-info">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                                stroke-width="2" aria-hidden="true">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                                 <polyline points="14 2 14 8 20 8" />
                             </svg>
@@ -430,53 +426,53 @@
                                 <p class="file-size" id="bootAnimFileSize"></p>
                             </div>
                         </div>
-                        <button class="btn-remove" onclick="removeBootAnimFile()">✕</button>
+                        <button class="btn-remove" onclick="removeBootAnimFile()" aria-label="Hapus file">✕</button>
                     </div>
 
                     <div class="options-grid">
                         <div class="option-group">
-                            <label>Nama Modul</label>
+                            <label for="bootAnimName">Nama Modul</label>
                             <input type="text" id="bootAnimName" class="text-input" placeholder="Contoh: CyberBoot">
                         </div>
                         <div class="option-group">
                             <label>Resolusi (Width x Height)</label>
                             <div class="input-row">
-                                <input type="number" id="bootAnimWidth" class="text-input" value="1080">
+                                <input type="number" id="bootAnimWidth" class="text-input" value="1080"
+                                    aria-label="Width">
                                 <span>x</span>
-                                <input type="number" id="bootAnimHeight" class="text-input" value="1920">
+                                <input type="number" id="bootAnimHeight" class="text-input" value="1920"
+                                    aria-label="Height">
                             </div>
                         </div>
                         <div class="option-group">
-                            <label>FPS</label>
+                            <label for="bootAnimFps">FPS</label>
                             <input type="number" id="bootAnimFps" class="text-input" value="24">
                         </div>
                         <div class="option-group">
-                            <label>Loop (0 = Terus menerus)</label>
+                            <label for="bootAnimLoop">Loop (0 = Terus menerus)</label>
                             <input type="number" id="bootAnimLoop" class="text-input" value="0">
                         </div>
                     </div>
 
-                    <button class="btn-download" style="width: 100%; margin-top: 20px;" onclick="createBootAnimation()">
+                    <button class="btn-download" style="width: 100%; margin-top: 22px;" onclick="createBootAnimation()">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                         </svg>
                         Buat Magisk Module
                     </button>
                 </div>
 
-                <!-- Progress -->
                 <div class="progress-card" id="bootAnimProgress" style="display:none;">
                     <div class="progress-header">
-                        <div class="spinner"></div>
+                        <div class="spinner" aria-hidden="true"></div>
                         <span id="bootAnimProgressText">Sedang memproses video...</span>
                     </div>
                     <p class="progress-note">Mengekstrak frames dan membuat file module. Mohon tunggu...</p>
                 </div>
 
-                <!-- Result -->
                 <div class="result-card" id="bootAnimResult" style="display:none;">
-                    <div class="result-icon">
+                    <div class="result-icon" aria-hidden="true">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -487,7 +483,7 @@
                     <p id="bootAnimResultInfo"></p>
                     <a class="btn-download-file" id="bootAnimDownloadLink" href="#" download>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                             <polyline points="7 10 12 15 17 10" />
                             <line x1="12" y1="15" x2="12" y2="3" />
@@ -499,19 +495,17 @@
         </div>
     </main>
 
-    <!-- Toast notification -->
-    <div class="toast" id="toast"></div>
+    <div class="toast" id="toast" role="alert" aria-live="polite"></div>
 
-    <!-- Error card (reusable) -->
-    <div class="error-card" id="errorCard" style="display:none;">
-        <div class="error-icon">⚠️</div>
+    <div class="error-card" id="errorCard" style="display:none;" role="alert">
+        <div class="error-icon" aria-hidden="true">⚠️</div>
         <p id="errorText"></p>
         <button class="btn-close-error" onclick="hideError()">Tutup</button>
     </div>
 
     <footer class="footer">
         <div class="container">
-            <p>Built with ❤️ — Powered by <strong>yt-dlp</strong> & <strong>OpenAI Whisper</strong></p>
+            <p>Built with ❤️ — Powered by <strong>yt-dlp</strong> &amp; <strong>OpenAI Whisper</strong></p>
         </div>
     </footer>
 
