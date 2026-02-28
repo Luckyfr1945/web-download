@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mediakit:
+    build: .
+    container_name: mediakit-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./downloads:/app/downloads
+      - ./uploads:/app/uploads
+      - ./transcripts:/app/transcripts
+      - ./bootanim_work:/app/bootanim_work
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    # Whisper requires some shared memory for larger files
+    shm_size: 2gb

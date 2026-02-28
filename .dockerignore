@@ -1,0 +1,23 @@
+node_modules
+npm-debug.log
+.DS_Store
+.env
+
+# Working directories
+downloads/
+uploads/
+transcripts/
+bootanim_work/
+
+# Magisk templates and user data
+bootanimation.zip
+*.zip
+*.mp4
+*.mkv
+*.webm
+*.avi
+*.mp3
+*.wav
+*.json
+!package.json
+!package-lock.json
